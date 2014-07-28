@@ -6,7 +6,7 @@
  * by the Free Software Foundation.
  */
 
-#include "Modules.h"
+#include <znc/Modules.h>
 
 class CForceIdentifyMsgMod : public CModule {
 public:
@@ -18,4 +18,4 @@ public:
 	}
 };
 
-MODULEDEFS(CForceIdentifyMsgMod, "Forces sending IDENTIFY-MSG to server")
+NETWORKMODULEDEFS(CForceIdentifyMsgMod, "Forces sending IDENTIFY-MSG to server")
